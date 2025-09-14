@@ -12,7 +12,7 @@ let userLetter = '';
 const array=[];
 
 function setup() {
-    alert(answer);
+    //alert(answer);
     for (let i = 0; i < answer.length; i++) {
         display[i] = "_ ";
         output = output + display[i];
