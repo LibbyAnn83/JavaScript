@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Hot/Cold Guessing Game</title>
+</head>
+    
+<body onload="setup()">
+    <div class="container">
+        <header class="row">
+            <img src="images/pexels-black-ice-551383-1314529.jpg" alt="numbers on a red background">
+            <h1>Number Guessing Game</h1>
+            <p>Try to guess the number. Pick a number between 1 and 1000. The color of the result will tell you how close you are.</p>   
+        
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-3">
+                    <h2>Start Here!</h2>
+                    <form>
+                        <label for="guess">Pick a Number</label>
+                        <input type="number" id="guess"><br><br>
+                        <button type="button" id="submit">Guess</button>
+                    </form>
+                    <p id="userGuess"></p>
+                </div>
+                <div class="col-6">
+                    <h2>Result</h2>
+                    <p id="result"></p>
+                </div>
+                <div class="col-3">
+                    <h2>Already Guessed</h2>
+                    <p id="guessed"></p>
+                </div>
+            </div>
+        </main>
+    </div>        
+    <footer>&copy; 2025 Elizabeth Nelson </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
