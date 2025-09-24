@@ -4,7 +4,7 @@ const colors=["#FF0000", "#FF4500", "#FF6347", "#FF8C00", "#f8fc2cff", "#87CEEB"
 
 function setup(){
   
-  alert(answer);
+  //alert(answer);
 document.getElementById("result").innerHTML = "?";
 }
 
