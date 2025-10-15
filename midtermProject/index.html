@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>ShelfSpace<br>Reading Tracker</h1>
+
+  </header>
+    <main>
+        <div class="container"> <!-- container formatting provides spacing -->
+        <div class="row">
+                <div class="col-12"> <!-- name and goal entry spans the page; this row disappears after clicking submit -->
+                    <div class="disappear">
+                    <h2>First Time Here?<br>Fill in This Form to Get Started</h2>
+                    <form>
+                        <label for="fName">Enter Your First Name</label>
+                        <input id="fName"><br><br>
+                        <label for="goal">Enter Your Reading Goal</label>
+                        <input type="number" id="goal"><br><br>
+                        <button type="button" id="submit">Submit</button> <!-- on submit this info goes into the reading goal box -->
+                    </form>
+                    </div>
+                </div>
+            </div>
+        <div class="row">   
+    <!-- left column: reading goal & stats -->
+    <div class="col-6">
+        <div class="card stats-card"> <!-- cards keep all the info organized; this card is populated by the disappear box at the top -->
+            <h2>Reading Goal</h2>
+            <p id="readingStats"></p>
+        </div>    
+        <br>
+        <div class="card stats-card">
+            <h2>Reading Stats</h2> <!-- this card is populated by the book entry -->
+            <p id="readingStats2"></p>
+        </div>
+    </div>
+
+    <!-- right column: input card -->
+    <div class="col-6">
+        <div class="card input-card">
+            <h2>What Are You Reading?</h2>
+            <form>
+                <label for="title">Title</label>
+                <input id="title"><br><br>
+                <label for="author">Author</label>
+                <input id="author"><br><br>
+                <label for="pages">Number of Pages</label>
+                <input type="number" id="pages"><br><br>
+                <label for="genre">Genre</label>
+                <select id="genre"> <!-- dropdown for genre -->
+                    <option value="">--Select a Genre--</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="science-fiction">Science Fiction</option>
+                    <option value="romance">Romance</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                <label for="date">Year Completed</label>
+                <input type="number" id="date" step="1" min="2025" max="2100"><br><br>
+                <button type="button" id="add">Add Book</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+    </main>
+
+    <footer>&copy; 2025 Elizabeth Nelson </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
