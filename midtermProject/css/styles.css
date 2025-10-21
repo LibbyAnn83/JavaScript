@@ -275,17 +275,13 @@ body {
     width: 90%;
     max-width: 1400px;
     min-width: 500px;
-    margin: 20px auto;
+    margin: 5px auto;
 }
 
 .row .col-6, .col-3, .col-9{
     min-height: 600px;
 }
 
-.row .col-12{
-    min-height: 300px;
-    
-}
 
 footer {
     text-align: center;
@@ -351,6 +347,14 @@ p {
     padding: 5px;
     min-height: 100px;
     background-color: var(--secondary-light);
+    flex: 0 0 200px;
+}
+
+#cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* space between cards */
+    justify-content: flex-start; /* or center */
 }
 
 .card img {
