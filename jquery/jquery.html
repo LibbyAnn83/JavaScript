@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#hideParagraphs").click(function(){
+    $(".test").hide();
+    });
+    });
+</script>
+    <script>
+    $(document).ready(function(){
+    $("#hideMain").click(function(){
+    $("#main").hide();
+    });
+    });
+</script>
+    <script>
+    $(document).ready(function(){
+    $("h2").click(function(){
+    $("h2").hide();
+    });
+    });
+</script>
+</head>
+<body>
+<h1>jQuery Practice</h1>
+<h2 class="heading">This is a heading. Click to Make it Disappear</h2>
+
+<p class="test">This is a paragraph.</p>
+<p class="test">This is another paragraph.</p>
+
+<main id="main">
+    <h2>This heading is in main</h2>
+    <p>This paragraph is in main.</p>
+</main>
+
+<button id="hideParagraphs">Hide Paragraphs</button>
+
+<button id="hideMain">Hide Main</button>
+
+</body>
+</html>
